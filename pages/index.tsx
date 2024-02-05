@@ -65,6 +65,7 @@ export default function Home() {
 
       // Assuming you want to fetch balances for the mainnet address
       const { balances } = await mainnetSecretJs.query.bank.allBalances({ address: mainnetAddress });
+      // mainnetSecretJs.query.snip20.
       setMainnetBalances(balances);
     }
     fetchMainnetBalances();
